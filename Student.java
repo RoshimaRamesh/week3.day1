@@ -1,38 +1,35 @@
-package student;
+package org.student;
 
-public class Student {
-	
-	
-	public void getStudentInfo(int id)
+import org.department.Department;
+
+public class Student extends Department{
+
+	public void studentName()
 	{
-		System.out.println("ID of student is:"+id);
+		System.out.println("studentName");	
 	}
 	
-	
-	public void getStudentInfo(int id, String name)
+	public void studentDept()
 	{
-		System.out.println("ID2 of student is:"+id+ "name of student is:"+ name);
+		System.out.println("studentDept");
 	}
-
 	
-	public void getStudentInfo(String email, int phoneNumber)
+	public void studentId()
 	{
-		System.out.println("email of student is:"+email+ "name of student is:"+ phoneNumber);
+		System.out.println("studentId");
 	}
-
-
+	
 	public static void main(String[] args) {
-		
-		Student st = new Student();
-		
-		st.getStudentInfo(10001);
-		st.getStudentInfo(10002, "shima");
-		st.getStudentInfo("r@gmail.com", 739740);
-		
-		
-		
 	
-
+		Student st = new Student();
+		st.collegeName();
+		st.collegeCode();
+		st.collegeRank();
+		st.deptName();
+		st.studentName();
+		st.studentDept();
+		st.studentId();
+		
 	}
-
+	
 }
